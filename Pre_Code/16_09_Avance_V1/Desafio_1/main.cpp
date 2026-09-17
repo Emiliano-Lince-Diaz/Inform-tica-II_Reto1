@@ -43,6 +43,8 @@ int main(){
             eliminarFicha(tablero, estadoJuego);
             gravedad(tablero,estadoJuego);
             generarFichasAleatorias(tablero, estadoJuego[FILAS], estadoJuego[COLUMNAS]);
+            cout << "\nEvaluando tablero..." << endl;
+            funcion_cascadas(tablero, estadoJuego);
             break;
 
         case OPCION_AGREGAR_FILA:
