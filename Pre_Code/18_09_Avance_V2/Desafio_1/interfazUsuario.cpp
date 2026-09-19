@@ -101,15 +101,15 @@ void mostrarAyuda(){
 // 0 (000) vacio | 1..6 (001..110) fichas normales | 7 (111) eliminacion
 const char* obtenerSimboloFicha(int valorFicha){
     switch(valorFicha){
-    case 0: return ".";  // Estado vacío
-    case 1: return "β";  // Beta
-    case 2: return "ω";  // Omega
-    case 3: return "σ";  // Sigma
-    case 4: return "γ";  // Gamma
-    case 5: return "θ";  // Theta
-    case 6: return "μ";  // Mu
-    case 7: return "X";  // Estado Eliminación
-    default: return "?";
+    case 0: return " . ";  // Estado vacío
+    case 1: return " β ";  // Beta
+    case 2: return " Ω ";  // Omega
+    case 3: return " Σ ";  // Sigma
+    case 4: return " Γ ";  // Gamma
+    case 5: return " θ ";  // Theta
+    case 6: return " μ ";  // Mu
+    case 7: return " X ";  // Estado Eliminación
+    default: return " ? ";
     }
 }
 
@@ -123,7 +123,7 @@ void imprimirTableroFichas(unsigned char* tablero, int filas, int columnas){
     cout << endl << "TABLERO DE JUEGO" << endl;
 
     // Encabezado con el indice de cada columna
-    cout << "     ";
+    cout << "    ";
     for(int columna = 0; columna < columnas; columna++){
         cout << setw(3) << columna;
     }
